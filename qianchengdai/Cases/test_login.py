@@ -43,7 +43,7 @@ def test_02_login_alter_error(data,init_login):
 
 
 # @pytest.mark.skip(reason="不需测试")
-@pytest.mark.sueecss
+@pytest.mark.success
 @pytest.mark.parametrize('data',login_data.success_data)
 def test_03_login_success(data,init_login):
     logger.info('正在执行{}模块第{}条测试用例,用例名字是:{},登录名是:{},登录密码是:{},期望值是:{}'.format(data['module'],
